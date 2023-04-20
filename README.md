@@ -45,6 +45,8 @@ For this analysis I wrote several function to implement the K-Nearest Neighbours
 - Why is it useful / used in that field area?
 - Make sure to provide sources for your information.
 
+This algorithm is used for classification of data points based on their proximity to other data points. Based on the most common classification of nearby data points, the target data point is then assigned a classification or grouping that matches the majority vote of nearby classifications. Some areas where this algorithm is applied is in finance to determine the risk associated with loaning money to individuals based on their credit score, in healthcare to make predictions on heart attack likelihood and in pattern recoginition to classify handwritten text such as numbers. The algorithm is useful in each of these areas because for example in finance, it can look at the credit score of past loan applicants to the bank and based on the behaviours of those persons can classify future loan applicants to a certain risk based on the nearness of their credit score to others before them. In a similar way it, within healthcare the algorithm can make a calculation on the connection between suffering from a heart attack and a patient's gene expressions using the proximity to other patients gene expression calculation and whether they suffered from a heart attack. Finally, in pattern recoginition it is also useful for classifying handwritten numbers by determining the proximity to other classified handwritten numbers and patterns, and assigning a number to the handwritte number based on the most common nearby number. 
+
 
 ## Implementation
 - What language did you use?
@@ -150,3 +152,6 @@ Some of the challenges I faces were understanding how the algorithm worked in th
 2. Scholarpedia, "K-nearest neighbor, 3 November, 2013. http://www.scholarpedia.org/article/K-nearest_neighbor
 3. GeeksforGeeks, "Implementation of K-Nearest Neighbours", 9 November, 2022. https://www.geeksforgeeks.org/implementation-k-nearest-neighbors/
 4. W3School, "Machine Learning - Confusion Matrix", https://www.w3schools.com/python/python_ml_confusion_matrix.asp
+5. IBM, "What is the k-nearest neighbors algorithm?", https://www.ibm.com/topics/knn
+6. ResearchGate, "Improved Handwritten Digit Recognition using Quantum K-Nearest Neighbor Algorithm", July 2019, https://www.researchgate.net/publication/332880911_Improved_Handwritten_Digit_Recognition_using_Quantum_K-Nearest_Neighbor_Algorithm
+7. IOPScience, "Credit scoring analysis using weighted k-nearest neighbor - Journal of Physics: Conference Series", https://iopscience.iop.org/article/10.1088/1742-6596/1025/1/012114
