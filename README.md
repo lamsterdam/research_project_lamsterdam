@@ -5,10 +5,6 @@
 * **Link** The Repository: https://github.com/lamsterdam/research_project_lamsterdam.git
 
 ## Introduction
-- What is the algorithm/datastructure?
-- What is the problem it solves? 
-- Provide a brief history of the algorithm/datastructure. (make sure to cite sources)
-- Provide an introduction to the rest of the paper. 
 
 This research report focuses on the analysis of the K-Nearest Neighbours algorithm and explores the accuracy of the algorithm by using a Confusion Matrix. This algorithm is used in the area of Machine Learning to make classifiactions and predictions based on the proximity of data points to one another. It is able to solve the problem of assigning a classification to unclassified points based on the distance between the point and other known points when the overall distribution of the data is unknown or hard to determine. This is because the algorithm does not take into account the distribution of the data points and thus it does not need this knowledge in order to run successfully. 
 The K-Nearest Neighbours algorithm was first introduced in an unpublished US Air Force School of Aviation Medicine report by Evelyn Fix and Joseph Hodges in 1951. They were both staticians at Berkley at the time and the results of their report later became known as the kNN algorithm. 
@@ -16,9 +12,6 @@ In remainder of this report I will examine the implementation of the K-Nearest N
 
 
 ## Analysis of Algorithm/Datastructure
-Make sure to include the following:
-- Time Complexity
-- Space Complexity
 
 | Algorithm |  Time | Space | 
 | :-- | :-- |  :-- | 
@@ -33,27 +26,16 @@ The K-Nearest neighbours alogorithm is known as a supervised machine learning al
 
 
 ## Empirical Analysis
-- What is the empirical analysis?
-- Provide specific examples / data.
 
 For this analysis I wrote several function to implement the K-Nearest Neighbours algorithm in python and used it to classify the iris data set. Since this data is already pre-classified, my goal was to test how accurate my implementation was at classifiying the species of flower based on the features. I split the data into two groups such that 70% of the data was used for training point data and 30% for testing point data. Based on the results of the model I compared it to what the true classification of the points should be to determine how accurate the model was. This was done using a Confusion Matrix where I could further analyze the accuracy, precision, recall and f1-score. In addition, I plotted a heatmap representation of the matrix to illustrate this visually as well.  
 
 
 ## Application
-- What is the algorithm/datastructure used for?
-- Provide specific examples
-- Why is it useful / used in that field area?
-- Make sure to provide sources for your information.
 
 This algorithm is used for classification of data points based on their proximity to other data points. Based on the most common classification of nearby data points, the target data point is then assigned a classification or grouping that matches the majority vote of nearby classifications. Some areas where this algorithm is applied is in finance to determine the risk associated with loaning money to individuals based on their credit score, in healthcare to make predictions on heart attack likelihood and in pattern recoginition to classify handwritten text such as numbers. The algorithm is useful in each of these areas because for example in finance, it can look at the credit score of past loan applicants to the bank and based on the behaviours of those persons can classify future loan applicants to a certain risk based on the nearness of their credit score to others before them. In a similar way it, within healthcare the algorithm can make a calculation on the connection between suffering from a heart attack and a patient's gene expressions using the proximity to other patients gene expression calculation and whether they suffered from a heart attack. Finally, in pattern recoginition it is also useful for classifying handwritten numbers by determining the proximity to other classified handwritten numbers and patterns, and assigning a number to the handwritte number based on the most common nearby number. 
 
 
 ## Implementation
-- What language did you use?
-- What libraries did you use?
-- What were the challenges you faced?
-- Provide key points of the algorithm/datastructure implementation, discuss the code.
-- If you found code in another language, and then implemented in your own language that is fine - but make sure to document that.
 
 For this implementation I used python as well as the pre-classified iris dataset which was obtained from the UCI Machine Learning Repository Laboratory. I imported the dataset to python and then split the data into my training sample and my testing sample to run the algorithm on. The Pandas, NumPy, matplotlib and seaborn libraries were also inported for this project. 
 
@@ -143,12 +125,14 @@ Some of the challenges I faces were understanding how the algorithm worked in th
 
 
 ## Summary
-- Provide a summary of your findings
-- What did you learn?
 
 ![Alt text](https://github.com/lamsterdam/research_project_lamsterdam/blob/main/confusion.png)
-In summary, I 
 
+In summary, the model was mostly accurate as illustrated in the image above. The precision of accurately classifying the flowers ranged from 0.92 to 1.00 and the accuracy of the model was 98%. I also constructed a heatmap to show the confusion matrix which is shown in the image below. The model made a slight mistake when it came to Iris-virginica but for the other two types it was able to accuately make the classification.
+
+![Alt text](https://github.com/lamsterdam/research_project_lamsterdam/blob/main/confusion_matrix_map.png)
+
+Overall, prior to writing this research paper I had very little knowledge of machine learning algorithms, as well as the libraries in python. Therefore, I learnt about supervised machine learning algorithms and how to construct one, and I also gained a basic understanding of several libraries such as numpy and pandas.  
 
 ## References
 1. GeeksforGeeks, "K-Nearest neighbours", 14 March, 2023. https://www.geeksforgeeks.org/k-nearest-neighbours/
