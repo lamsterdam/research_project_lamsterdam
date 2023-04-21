@@ -146,6 +146,9 @@ Some of the challenges I faces were understanding how the algorithm worked in th
 - Provide a summary of your findings
 - What did you learn?
 
+![Alt text](https://github.com/lamsterdam/research_project_lamsterdam/blob/main/confusion.png)
+In summary, I 
+
 
 ## References
 1. GeeksforGeeks, "K-Nearest neighbours", 14 March, 2023. https://www.geeksforgeeks.org/k-nearest-neighbours/
